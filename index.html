@@ -35,10 +35,52 @@
             display: flex;
             justify-content: center;
             gap:1rem;
+            padding:20px;
         }
         nav a{
             color: white;
             text-decoration: none;
+        }
+        .menu-section{
+            padding: 50px 20px;
+        }
+        .menu-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        }
+        .menu-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .menu-item img{
+            width:280px;
+            height:280px;
+            border-radius: 12px;
+        }
+        .menu-item h3{
+            margin: 15px 0 10px;
+        }.menu-item p{
+            padding: 0 40px;
+        }
+        .special-section{
+            background: url(./images/banner.jpg);
+            background-position: center center;
+            background-size: cover;
+            padding: 60px 20px;
+        }
+        .special-item{
+            background: white;
+            color:#333;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+        .special-section h2{
+
         }
     </style>
 </head>
@@ -55,6 +97,48 @@
         <a href="#aboutus">About us</a>
         <a href="#contactus">Contact us</a>
     </nav>
+    <section class="menu-section">
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="./images/pizza.jpg" alt="pizza photo">
+                <h3>Meat Lovers BBq pizza</h3>
+                <p>CLassic pizza topped with fresh tomato sauce,mozzerella, meat, bacon pan pried pizza</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/burger.jpg" alt="burger photo">
+                <h3>Cheese Burger</h3>
+                <p>Juicy Bacon patty with melted chees, fresh lettuce and tomato</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/fried-chicken.jpg" alt="fried chicken photo">
+                <h3>Korean spicy Fried chicken</h3>
+                <p>BBq sauce dipped spicy fired chicken with sprinkled of sesamme seed</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/pasta.jpg" alt="pasta photo">
+                <h3>Italian garlic sauuce pasta</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum doloribus quo, </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="special-section">
+    <h2>Chef's specials</h2>
+<div class="special-container">
+    <div class="special-item">
+        <h3>Truffle burger</h3>
+        <p>Our signature burger topped with truffle oil and parmesan cheese</p>
+    </div>
+    <div class="special-item">
+        <h3>Lobster Bisque </h3>
+        <p>Our signature burger topped with truffle oil and parmesan cheese</p>
+    </div>
+    <div class="special-item">
+        <h3>Chocolate Lava cake</h3>
+        <p>Our signature burger topped with truffle oil and parmesan cheese</p>
+    </div>
+</div>
+    </section>
 
 </body>
 </html>
