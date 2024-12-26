@@ -65,10 +65,18 @@
             padding: 0 40px;
         }
         .special-section{
-            background: url(./images/banner.jpg);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(./images/banner.jpg);
+            /* background: url(./images/banner.jpg); */
             background-position: center center;
             background-size: cover;
             padding: 60px 20px;
+            overlay:rgba(0,0,0,0.9);
+        }
+        .special-container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:20px;
         }
         .special-item{
             background: white;
@@ -80,7 +88,8 @@
             text-align: center;
         }
         .special-section h2{
-
+text-align: center;
+margin-bottom: 20px;
         }
     </style>
 </head>
