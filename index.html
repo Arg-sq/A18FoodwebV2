@@ -91,6 +91,42 @@
 text-align: center;
 margin-bottom: 20px;
         }
+        .about-section{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-text,.about-image{
+            flex:1;
+            max-width: 600px;
+            min-width: 280px; 
+            padding: 20px;
+        }
+.about-text h2{
+    margin-bottom: 20px;
+}
+.about-section p{
+    margin-bottom: 14px;
+}
+
+        .about-image img{
+            width:100%;
+        }
+        .contact-section{
+            background-color: #e9ece1;
+            text-align: center;
+        }
+        .contact-container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:20px;
+        }
+        .contact-details, .contact-form{
+            flex:1;
+            max-width: 500px;
+        }
     </style>
 </head>
 <body>
@@ -159,6 +195,18 @@ margin-bottom: 20px;
             <img src="./images/about.jpg" alt="about photo">
         </div>
 
+    </section>
+    <section class="contact-section">
+        <h2>Contact us</h2>
+        <div class="contact-container">
+            <div class="contact-details">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> deliciousBites@gmail.com</p>
+                <p><strong>Phone:</strong> 98411234567</p>
+                <p><strong>Location: baneshwor</strong></p>
+            </div>
+            <div class="contact-form"></div>
+        </div>
     </section>
 
 </body>
